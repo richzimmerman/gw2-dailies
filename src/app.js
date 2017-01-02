@@ -147,14 +147,14 @@ function getRewards(url) {
 
 // Navbar scroll animation
 $('a').click(function(){
-	if ($(window).width() >= 960) {
+	if ($(window).width() >= 975) {
 	    $('html, body').animate({
 	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 70
 	    }, 500);
 	    $(this).blur();
 	    return false;
 	}
-	if ($(window).width() < 960) {
+	if ($(window).width() < 975) {
 		$('html, body').animate({
 	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 260
 	    }, 500);
