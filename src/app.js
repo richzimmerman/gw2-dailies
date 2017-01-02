@@ -118,7 +118,6 @@ function getTodaysAchievementsURL(array) {
 		var tomorrowPVP = [];
 		var tomorrowWVW = [];
 		var tomorrowSpec = [];
-		console.log(data);
 		for (let i = 0; i < data.pve.length; i++) {
 			tomorrowPVE.push(data.pve[i].id);
 		}
@@ -150,7 +149,6 @@ function getTomAchievements(postList, url, cat) {
 		dataType: "json"
 	}).then(function (data){
 		var tomorrowRewards = [];
-		console.log(data);
 		for (let i = 0; i < data.length; i++) {
 			tomorrowRewards.push(data[i].rewards[0].id);
 			let tr = document.createElement("tr");
