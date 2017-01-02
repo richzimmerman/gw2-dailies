@@ -11,7 +11,7 @@
 	</head>
 	<body>
 	<div id="navbar1" class="container text-center">
-		<nav class="nav navbar-fixed-top col-xs-12">
+		<nav class="nav col-xs-12">
 			<a class="col-xs-12 col-md-3 nav-link" href="#pve">PvE</a>
 			<a class="col-xs-12 col-md-3 nav-link" href="#pvp">PvP</a>
 			<a class="col-xs-12 col-md-3 nav-link" href="#wvw">WvW</a>
@@ -19,7 +19,7 @@
 		</nav>
 	</div>
 	<div id="navbar2" class="container text-center">
-		<nav class="nav navbar-fixed-top col-xs-12">
+		<nav class="nav col-xs-12">
 			<a class="col-xs-12 col-md-3 nav-link" href="#tom-pve">PvE</a>
 			<a class="col-xs-12 col-md-3 nav-link" href="#tom-pvp">PvP</a>
 			<a class="col-xs-12 col-md-3 nav-link" href="#tom-wvw">WvW</a>
@@ -63,5 +63,12 @@
 		<footer>All Data and Image Assets belong to ArenaNet/NCsoft Corporation.</footer>
 	</div>
 	<script type="text/javascript" src="./src/app.js"></script>
+	<script>
+		$(document).ready(function(){
+			if ($(window).width() >= 975) {
+				$(".nav").toggleClass("navbar-fixed-top");
+			}
+		});
+	</script>
 	</body>
 </html>
