@@ -25,6 +25,10 @@ body {
 	background: linear-gradient(to bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1) );  /* Standard syntax */	
 }
 
+#tomorrow {
+	display: none;
+}
+
 h3, h1 {
 	font-size: 2em;
 	text-shadow: 1px 2px black;
@@ -41,6 +45,10 @@ h1 {
 
 #chest {
 	display:none;
+}
+
+#navbar2 {
+	display: none;
 }
 
 h3 {
@@ -76,10 +84,25 @@ a:hover {
     box-shadow: -2px 2px 0px #4c0890;
 }
 
+button {
+	height: 70px;
+	margin: 20px 5px;
+	color: black;
+}
+
+#footer {
+	padding: 15px 0;
+	margin: 15px auto;
+}
+
 footer {
 	font-weight: normal;
 	font-size: .7em;
-	margin: 20px auto;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
 }
 
 @media screen and (min-width: 960px) {

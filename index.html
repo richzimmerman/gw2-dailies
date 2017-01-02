@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="./src/jquery.js"></script>
 	</head>
 	<body>
-	<div id="navbar" class="container text-center">
+	<div id="navbar1" class="container text-center">
 		<nav class="nav navbar-fixed-top col-xs-12">
 			<a class="col-xs-12 col-md-3 nav-link" href="#pve">PvE</a>
 			<a class="col-xs-12 col-md-3 nav-link" href="#pvp">PvP</a>
@@ -18,12 +18,23 @@
 			<a class="col-xs-12 col-md-3 nav-link" href="#special">Special</a>
 		</nav>
 	</div>
+	<div id="navbar2" class="container text-center">
+		<nav class="nav navbar-fixed-top col-xs-12">
+			<a class="col-xs-12 col-md-3 nav-link" href="#tom-pve">PvE</a>
+			<a class="col-xs-12 col-md-3 nav-link" href="#tom-pvp">PvP</a>
+			<a class="col-xs-12 col-md-3 nav-link" href="#tom-wvw">WvW</a>
+			<a class="col-xs-12 col-md-3 nav-link" href="#tom-special">Special</a>
+		</nav>
+	</div>
 	<div class="container col-md-12 text-center">
 		<img id="chest" class="img-fluid col-md-3" src="./images/chest.png">
 		<h1 id="header" class="col-md-9">Daily Achievements <br/> For lazy players, like me...</h1>
 	</div>
 	<div class="container">
-
+		<div class="container col-xs-12">
+			<button id="today-button" class="col-xs-12 col-md-3 col-md-offset-3">Today's Daily Achievements</button>
+			<button id="tomorrow-button" class="col-xs-12 col-md-3 ">Tomorrow's Daily Achievements</button>
+		</div>
 		<div id="today" name="today">
 		<table class="table container-fluid">
 			<div name="pve" id="pve" class="row">
@@ -36,8 +47,15 @@
 		</div>
 
 
-		<div id="tomorrow" class="col-xl-8">
-			
+		<div id="tomorrow">
+			<table class="table container-fluid">
+			<div name="tom-pve" id="tom-pve" class="row">
+				<img src="./images/dailyPVE.png">
+			</div>
+			<div name="tom-pvp" id="tom-pvp" class="row"></div>
+			<div name="tom-wvw" id="tom-wvw" class="row"></div>
+			<div name="tom-special" id="tom-special" class="row"></div>
+		</table>
 		</div>
 
 	</div>
