@@ -16,7 +16,7 @@ body {
 	color: white;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: rgba(95, 10, 181, 0.6); /* For browsers that do not support gradients */
+	background: rgba(95, 10, 181, 1); /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(left top, rgba(95, 10, 181, 1), rgba(45, 43, 36,1)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1)); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1)); /* For Firefox 3.6 to 15 */
@@ -27,6 +27,9 @@ h3, h1 {
 	font-size: 2em;
 	text-shadow: 1px 2px black;
 	text-align: center;
+}
+
+h1 {
 	background: #e6a4e5; /* For browsers that do not support gradients */
 	background: -webkit-radial-gradient(#e6a4e5 25%, rgba(230, 164, 229, 0.3) 45%,rgba(230, 164, 229, 0) 75%); /* Safari 5.1-6.0 */
 	background: -o-radial-gradient(#e6a4e5 25%, rgba(230, 164, 229, 0.3) 45%, rgba(230, 164, 229, 0) 75%); /* For Opera 11.6-12.0 */
@@ -35,10 +38,40 @@ h3, h1 {
 }
 
 h3 {
-	padding: 15px 0;
-	width: 100px;
+	display: inline-block;
+	height: 64px;
+	margin: 0;
 }
 
-td {
-	margin-left: 5px;
+tr {
+	padding-bottom: 15px;
+	margin: 15px auto;
+	border-bottom: solid 1px rgba(255,255,255,0.2);
+}
+
+td:last-child {
+	border-left: solid 1px rgba(255,255,255,0.2);
+}
+
+#navbar {
+	width: 100%;
+}
+
+nav a {
+	font-size: 1.5em;
+	padding: 10px 0;
+	border: solid 2px #5509a2;
+	background-color: rgba(95,10,181,0.5);
+}
+
+a:hover {
+	color: #337ab7;
+    text-decoration: none;
+    box-shadow: -2px 2px 0px #4c0890;
+}
+
+@media screen and (min-width: 960px) {
+	#header {
+		margin-top: 100px;
+	}
 }

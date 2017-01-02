@@ -10,18 +10,28 @@
 		<script type="text/javascript" src="./src/jquery.js"></script>
 	</head>
 	<body>
-	<div class="container">
+	<div id="navbar" class="container hidden-sm-down text-center">
+		<nav class="nav col-xs-12">
+			<a class="col-xs-12 col-md-3 nav-link" href="#pve">PvE</a>
+			<a class="col-xs-12 col-md-3 nav-link" href="#pvp">PvP</a>
+			<a class="col-xs-12 col-md-3 nav-link" href="#wvw">WvW</a>
+			<a class="col-xs-12 col-md-3 nav-link" href="#special">Special</a>
+		</nav>
+	</div>
+	<div class="container col-md-12 text-center">
 		<img class="img-fluid col-md-3" src="./images/chest.png">
-		<h1 class="col-md-9">Daily Achievements</h1>
+		<h1 id="header" class="col-md-9">Daily Achievements <br/> For lazy players, like me...</h1>
 	</div>
 	<div class="container">
 
-		<div id="today" class="table-responsive">
-		<table class="table">
-			<tr id="pve"></tr>
-			<tr id="pvp"></tr>
-			<tr id="wvw"></tr>
-			<tr id="special"></tr>
+		<div id="today" name="today">
+		<table class="table container-fluid">
+			<div name="pve" id="pve" class="row">
+				<img src="./images/dailyPVE.png">
+			</div>
+			<div name="pvp" id="pvp" class="row"></div>
+			<div name="wvw" id="wvw" class="row"></div>
+			<div name="special" id="special" class="row"></div>
 		</table>
 		</div>
 
