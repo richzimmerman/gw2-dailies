@@ -10,6 +10,8 @@
 }
 
 body {
+	position: relative;
+	padding-top: 225px;
 	font-family: cronos;
 	font-size: 1.9em;
 	min-height: 100vh;
@@ -17,10 +19,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background: rgba(95, 10, 181, 1); /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(left top, rgba(95, 10, 181, 1), rgba(45, 43, 36,1)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1));  /* Standard syntax */	
+	background: -webkit-linear-gradient(left top, rgba(95, 10, 181, 1), rgba(45, 43, 36,1) ); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1) ); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1) ); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(95, 10, 181, 1), rgba(45, 43, 36,1) );  /* Standard syntax */	
 }
 
 h3, h1 {
@@ -61,7 +63,7 @@ nav a {
 	font-size: 1.5em;
 	padding: 10px 0;
 	border: solid 2px #5509a2;
-	background-color: rgba(95,10,181,0.5);
+	background-color: rgba(95,10,181,1);
 }
 
 a:hover {
@@ -70,8 +72,18 @@ a:hover {
     box-shadow: -2px 2px 0px #4c0890;
 }
 
+footer {
+	font-weight: normal;
+	font-size: .7em;
+	margin: 20px auto;
+}
+
 @media screen and (min-width: 960px) {
 	#header {
 		margin-top: 100px;
+	}
+
+	body {
+		padding-top: 70px;
 	}
 }
