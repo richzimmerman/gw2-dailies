@@ -254,7 +254,7 @@ $('a').click(function(){
 	}
 	if ($(window).width() < 975) {
 		$('html, body').animate({
-	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 260
+	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top - 10
 	    }, 500);
 	    $(this).blur();
 	    return false;
